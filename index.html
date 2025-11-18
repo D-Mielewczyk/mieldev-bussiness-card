@@ -2,11 +2,11 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <title>MielDev - Cloud & Data Engineering</title>
+  <title>MielDev - Data Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="MielDev - one-person cloud and data engineering studio by Dawid Mielewczyk. Data pipelines, analytics and automation on AWS."
+    content="MielDev - one-person data engineering company, with a strong focus on cloud and AWS. Data pipelines, data infrastructure and automation."
   />
 
   <!-- Tailwind via CDN (no build step) -->
@@ -61,7 +61,7 @@
           </div>
           <div class="leading-tight">
             <div class="text-sm font-semibold tracking-tight">MielDev</div>
-            <div class="text-xs text-slate-400">Cloud & Data Engineering</div>
+            <div class="text-xs text-slate-400" data-profile="title-short">Data Engineer</div>
           </div>
         </div>
 
@@ -89,18 +89,20 @@
         <div>
           <p class="mb-3 inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-3 py-1 text-xs text-slate-300">
             <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
-            Available for cloud & data projects
+            Available for data and cloud projects
           </p>
 
           <h1 class="mb-4 text-3xl font-semibold tracking-tight text-slate-50 md:text-4xl">
-            I build reliable data pipelines and analytics
+            I build reliable data pipelines and data infrastructure
             <span class="text-brand-400">for modern teams.</span>
           </h1>
 
           <p class="mb-6 max-w-xl text-sm text-slate-300 md:text-base">
-            I am <span class="font-medium text-slate-100">Dawid Mielewczyk</span>, a one-person cloud & data
-            engineering studio. I help companies design, build and maintain data platforms on AWS with Python, SQL and dbt
-            so they can trust their dashboards and ship faster.
+            I am
+            <span class="font-medium text-slate-100" data-profile="full-name"></span>,
+            an independent data engineer running a one-person company called MielDev. I help teams design, build and
+            maintain data platforms and automated reporting on AWS with Python, SQL and dbt, so the rest of the company
+            can rely on consistent, well-modeled data.
           </p>
 
           <div class="mb-6 flex flex-wrap items-center gap-3">
@@ -124,7 +126,7 @@
               AWS · Python · SQL
             </div>
             <div class="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-3 py-1">
-              dbt · Airflow · Terraform
+              dbt · Airflow
             </div>
             <div class="inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900/60 px-3 py-1">
               Data warehouses · ETL/ELT
@@ -141,32 +143,40 @@
             </div>
             <div>
               <div class="text-sm font-semibold text-slate-50">MielDev</div>
-              <div class="text-xs text-slate-400">Cloud & Data Engineering Studio</div>
+              <div class="text-xs text-slate-400" data-profile="title-tagline">Independent Data Engineer</div>
             </div>
           </div>
 
           <dl class="space-y-3 text-xs text-slate-300">
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Name</dt>
+              <dd class="text-right" data-profile="full-name"></dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-slate-400">Role</dt>
+              <dd class="text-right">Data Engineer</dd>
+            </div>
             <div class="flex justify-between gap-4">
               <dt class="text-slate-400">Location</dt>
               <dd class="text-right">Remote · EU-friendly timezones</dd>
             </div>
             <div class="flex justify-between gap-4">
               <dt class="text-slate-400">Core stack</dt>
-              <dd class="text-right">Python, SQL, AWS, dbt, Airflow, Terraform</dd>
+              <dd class="text-right">Python, SQL, AWS, dbt, Airflow</dd>
             </div>
             <div class="flex justify-between gap-4">
-              <dt class="text-slate-400">Services</dt>
-              <dd class="text-right">Data pipelines, dashboards, cost-optimised cloud setups</dd>
+              <dt class="text-slate-400">Phone</dt>
+              <dd class="text-right" data-profile="phone-text"></dd>
             </div>
             <div class="flex justify-between gap-4">
-              <dt class="text-slate-400">Contact</dt>
+              <dt class="text-slate-400">Email</dt>
               <dd class="text-right">
                 <button
                   id="copy-email"
                   class="inline-flex items-center gap-1 text-emerald-300 underline-offset-2 hover:underline"
                   type="button"
                 >
-                  dawid@mieldev.com
+                  <span data-profile="email-text"></span>
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor">
                     <path
                       d="M6 4a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-1V9a3 3 0 0 0-3-3H6V4Z"
@@ -190,8 +200,8 @@
       <section id="services" class="space-y-4">
         <h2 class="text-xl font-semibold tracking-tight text-slate-50">What I can help you with</h2>
         <p class="max-w-2xl text-sm text-slate-300">
-          I join teams as a focused data engineer to unblock delivery, stabilise data quality and make dashboards
-          actually trustworthy.
+          I join teams as a focused data engineer to unblock delivery, stabilise data quality and make the data behind
+          reports and dashboards actually trustworthy.
         </p>
 
         <div class="grid gap-4 md:grid-cols-3">
@@ -228,29 +238,29 @@
           <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs">
             <div class="mb-1 text-xs font-semibold text-slate-200">Cloud</div>
             <div class="space-y-1 text-slate-300">
-              <div>AWS (S3, Lambda, ECS, RDS)</div>
-              <div>IAM, networking basics</div>
+              <div>AWS (S3, Athena, Glue, Redshift)</div>
+              <div>GCP, Azure</div>
             </div>
           </div>
           <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs">
             <div class="mb-1 text-xs font-semibold text-slate-200">Data engineering</div>
             <div class="space-y-1 text-slate-300">
               <div>Python, SQL</div>
-              <div>dbt, Airflow, Prefect</div>
+              <div>dbt, Airflow, Spark</div>
             </div>
           </div>
           <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs">
             <div class="mb-1 text-xs font-semibold text-slate-200">Storage & warehouses</div>
             <div class="space-y-1 text-slate-300">
-              <div>PostgreSQL, Redshift, BigQuery</div>
-              <div>Parquet, partitioning</div>
+              <div>PostgreSQL, Redshift, Athena</div>
+              <div>Parquet, MongoDB</div>
             </div>
           </div>
           <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs">
             <div class="mb-1 text-xs font-semibold text-slate-200">Ops & tooling</div>
             <div class="space-y-1 text-slate-300">
               <div>Git, CI/CD</div>
-              <div>Terraform, Docker</div>
+              <div>Docker, Github Actions, GitLab CI/CD</div>
             </div>
           </div>
         </div>
@@ -276,7 +286,7 @@
               </h3>
               <p class="mb-1 text-slate-300">
                 Designed and implemented end to end data flow from production systems into a warehouse and dbt models
-                powering finance and product dashboards.
+                powering finance and product reporting.
               </p>
               <ul class="flex flex-wrap gap-2 text-[11px] text-slate-400">
                 <li>Daily pipeline with monitoring and alerting</li>
@@ -315,22 +325,21 @@
         <h2 class="text-xl font-semibold tracking-tight text-slate-50">About MielDev</h2>
         <div class="grid gap-4 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
           <p class="text-sm text-slate-300">
-            MielDev is a one-person cloud and data engineering studio run by
-            <span class="font-medium text-slate-100">Dawid Mielewczyk</span>. I combine software engineering mindset
-            with analytics to help teams build reliable, understandable data stacks instead of fragile pipelines and
-            mysterious dashboards.
+            MielDev is the one-person data engineering company. I combine a software engineering
+            mindset with analytics thinking to help teams build reliable, understandable data stacks instead of fragile
+            pipelines and mysterious dashboards.
           </p>
           <p class="text-sm text-slate-300">
             I enjoy working closely with product, analytics and finance stakeholders, translating their questions into
-            concrete data models and robust infrastructure. I am comfortable owning both the plumbing and the last mile
-            to BI tools.
+            concrete data models and robust, well-tested pipelines. I focus on the data platform and automated reporting,
+            so that whichever BI tools you use can rely on clean, consistent inputs.
           </p>
         </div>
       </section>
 
       <!-- Contact -->
       <section id="contact" class="space-y-4 pb-10">
-        <h2 class="text-xl font-semibold tracking-tight text-slate-50">Let’s work together</h2>
+        <h2 class="text-xl font-semibold tracking-tight text-slate-50">Let's work together</h2>
         <p class="max-w-2xl text-sm text-slate-300">
           Tell me briefly what you need help with and what your current stack looks like. I usually reply within one
           business day.
@@ -338,8 +347,9 @@
 
         <div class="grid gap-6 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)]">
           <form
+            id="contact-form"
             class="space-y-3 rounded-2xl border border-slate-800 bg-slate-900/70 p-4 text-sm"
-            action="mailto:dawid@mieldev.com"
+            action=""
             method="post"
             enctype="text/plain"
           >
@@ -381,7 +391,7 @@
             </button>
             <p class="text-[11px] text-slate-400">
               This form uses your default email client. If you prefer, write directly to
-              <span class="font-medium text-slate-200">dawid@mieldev.com</span>.
+              <span class="font-medium text-slate-200" data-profile="email-text"></span>.
             </p>
           </form>
 
@@ -390,12 +400,21 @@
               <div class="mb-1 text-xs font-semibold text-slate-200">Direct contact</div>
               <p class="text-xs text-slate-300">
                 Email:
-                <a href="mailto:dawid@mieldev.com" class="text-emerald-300 underline-offset-2 hover:underline">
-                  dawid@mieldev.com
-                </a>
+                <a
+                  data-profile="email-link"
+                  class="text-emerald-300 underline-offset-2 hover:underline"
+                ></a>
               </p>
-              <!-- Podmień jak będziesz miał firmowy numer -->
-              <p class="mt-1 text-xs text-slate-400">Preferred: email first, then we can schedule a call.</p>
+              <p class="mt-1 text-xs text-slate-300">
+                Phone:
+                <a
+                  data-profile="phone-link"
+                  class="text-emerald-300 underline-offset-2 hover:underline"
+                ></a>
+              </p>
+              <p class="mt-1 text-xs text-slate-400">
+                Preferred: email first, then we can schedule a call.
+              </p>
             </div>
 
             <div class="rounded-2xl border border-slate-800 bg-slate-900/60 p-4 text-xs text-slate-300">
@@ -414,16 +433,78 @@
     <!-- Footer -->
     <footer class="border-t border-slate-800/70 bg-slate-950/90">
       <div class="mx-auto flex max-w-5xl flex-col gap-2 px-4 py-4 text-[11px] text-slate-500 md:flex-row md:items-center md:justify-between">
-        <span>© <span id="year"></span> MielDev · Dawid Mielewczyk</span>
+        <span>© <span id="year"></span> MielDev · <span data-profile="full-name"></span></span>
         <span class="text-slate-500">
-          Cloud & data engineering · Python · AWS · SQL
+          Data engineering · Python · AWS · SQL
         </span>
       </div>
     </footer>
   </div>
 
-  <!-- Small JS: smooth scroll + copy email -->
+  <!-- Small JS: config, smooth scroll, copy email -->
   <script>
+    const profile = {
+      firstName: "Dawid",
+      lastName: "Mielewczyk",
+      get fullName() {
+        return this.firstName + " " + this.lastName;
+      },
+      email: "md.mielewczykdawid@gmail.com",
+      phoneDisplay: "+48 512 705 533",
+      phoneTel: "+48512705533",
+      titleShort: "Data Engineer",
+      titleTagline: "Independent Data Engineer",
+    };
+
+    function applyProfile() {
+      // Full name
+      document.querySelectorAll("[data-profile='full-name']").forEach((el) => {
+        el.textContent = profile.fullName;
+      });
+
+      // Email text (plain)
+      document.querySelectorAll("[data-profile='email-text']").forEach((el) => {
+        el.textContent = profile.email;
+      });
+
+      // Email links (mailto)
+      document.querySelectorAll("[data-profile='email-link']").forEach((el) => {
+        el.textContent = profile.email;
+        if (el.tagName === "A") {
+          el.href = "mailto:" + profile.email;
+        }
+      });
+
+      // Phone text
+      document.querySelectorAll("[data-profile='phone-text']").forEach((el) => {
+        el.textContent = profile.phoneDisplay;
+      });
+
+      // Phone links (tel)
+      document.querySelectorAll("[data-profile='phone-link']").forEach((el) => {
+        el.textContent = profile.phoneDisplay;
+        if (el.tagName === "A") {
+          el.href = "tel:" + profile.phoneTel;
+        }
+      });
+
+      // Titles
+      document.querySelectorAll("[data-profile='title-short']").forEach((el) => {
+        el.textContent = profile.titleShort;
+      });
+      document.querySelectorAll("[data-profile='title-tagline']").forEach((el) => {
+        el.textContent = profile.titleTagline;
+      });
+
+      // Contact form mailto
+      const contactForm = document.getElementById("contact-form");
+      if (contactForm) {
+        contactForm.action = "mailto:" + profile.email;
+      }
+    }
+
+    applyProfile();
+
     // Smooth scroll for nav buttons
     document.querySelectorAll("[data-scroll]").forEach((btn) => {
       btn.addEventListener("click", () => {
@@ -438,12 +519,11 @@
     // Copy email to clipboard
     const emailButton = document.getElementById("copy-email");
     const toast = document.getElementById("email-toast");
-    const email = "dawid@mieldev.com"; // <- podmień jak zmienisz
 
     if (emailButton && navigator.clipboard) {
       emailButton.addEventListener("click", async () => {
         try {
-          await navigator.clipboard.writeText(email);
+          await navigator.clipboard.writeText(profile.email);
           if (toast) {
             toast.classList.remove("hidden");
             setTimeout(() => toast.classList.add("hidden"), 2200);
