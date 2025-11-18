@@ -1,5 +1,7 @@
 # mieldev-bussiness-card
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/716b5c24-470c-4f6b-ae3b-4ef27c553081/deploy-status)](https://app.netlify.com/projects/mieldev/deploys)
+
 A minimal static website acting as a business card for my single-person data engineering business.
 
 ## Tech stack
